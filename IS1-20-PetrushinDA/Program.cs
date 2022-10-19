@@ -6,16 +6,6 @@ using System.Windows.Forms;
 
 namespace IS1_20_PetrushinDA
 {
-    //Класс для передачи значений между формами
-    static class SomeClass
-    {
-        //Статичное поле, которое хранит значение для передачи его между формами
-        public static string variable_class;
-        //Статичное поле, которое хранит значения ID добавленного клиента на Form15-addClient
-        public static string new_inserted_id;
-        //Статичное поле, которое хранит значение ID добаленного заказа
-        public static string new_inserted_mainOrder_id;
-    }
         //Класс необходимый для хранения состояния авторизации во время работы программы
         static class Auth
         {
@@ -39,7 +29,7 @@ namespace IS1_20_PetrushinDA
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainForm ());
+                Application.Run(new MainForm());
             }
         }
     }
