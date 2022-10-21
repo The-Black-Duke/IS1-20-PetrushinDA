@@ -33,9 +33,9 @@ namespace IS1_20_PetrushinDA
                 //Отображаем рабочую форму
                 this.Show();
                 //Вытаскиваем из класса поля в label'ы
-                metroLabel4.ForeColor = Color.GreenYellow;
                 metroLabel2.Text = Auth.auth_id;
                 metroLabel3.Text = Auth.auth_fio;
+                metroLabel4.ForeColor = Color.GreenYellow;
                 metroLabel4.Text = "Успешно!";
                 //Красим текст в label в зелёный цвет
                 
@@ -46,6 +46,21 @@ namespace IS1_20_PetrushinDA
                 //Закрываем форму
                 this.Close();
             }
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel2_Click(object sender, EventArgs e)
+        {
+                
+        }
+
+        private void metroLabel4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

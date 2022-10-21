@@ -42,6 +42,7 @@ namespace IS1_20_PetrushinDA
             this.metroLabel2.Size = new System.Drawing.Size(22, 20);
             this.metroLabel2.TabIndex = 1;
             this.metroLabel2.Text = "ID";
+            this.metroLabel2.Click += new System.EventHandler(this.metroLabel2_Click);
             // 
             // metroLabel3
             // 
@@ -51,6 +52,7 @@ namespace IS1_20_PetrushinDA
             this.metroLabel3.Size = new System.Drawing.Size(30, 20);
             this.metroLabel3.TabIndex = 2;
             this.metroLabel3.Text = "FIO";
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
             // 
             // metroLabel4
             // 
@@ -60,16 +62,17 @@ namespace IS1_20_PetrushinDA
             this.metroLabel4.Size = new System.Drawing.Size(64, 20);
             this.metroLabel4.TabIndex = 3;
             this.metroLabel4.Text = "Succefull";
+            this.metroLabel4.Click += new System.EventHandler(this.metroLabel4_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(442, 361);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Авторизация";

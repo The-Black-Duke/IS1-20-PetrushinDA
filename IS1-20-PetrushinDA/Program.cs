@@ -24,14 +24,15 @@ namespace IS1_20_PetrushinDA
             /// <summary>
             /// Главная точка входа для приложения.
             /// </summary>
-            [STAThread]
+                [STAThread]
             static void Main()
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new MainForm());
+
             }
         }
-    }
+}
 
 
