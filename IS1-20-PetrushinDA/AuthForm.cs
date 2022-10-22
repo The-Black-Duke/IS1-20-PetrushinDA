@@ -15,7 +15,8 @@ namespace IS1_20_PetrushinDA
     public partial class AuthForm : MetroFramework.Forms.MetroForm
     {
         // строка подключения к БД
-        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_24;database=is_1_20_st24_KURS;password=83259142;";
+        //string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_24;database=is_1_20_st24_KURS;password=83259142;";
+        string connStr = "server=10.90.12.110;port=33333;user=st_1_20_24;database=is_1_20_st24_KURS;password=83259142;";
         //Переменная соединения
         MySqlConnection conn;
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
@@ -124,6 +125,17 @@ namespace IS1_20_PetrushinDA
 
         private void metroTextBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void AuthForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit();
+        }
+
+        private void AuthForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
 
         }
     }

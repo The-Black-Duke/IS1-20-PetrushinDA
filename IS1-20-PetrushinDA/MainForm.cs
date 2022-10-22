@@ -12,9 +12,9 @@ using MySql.Data.MySqlClient;
 
 namespace IS1_20_PetrushinDA
 {
-    public partial class MainForm : MetroFramework.Forms.MetroForm
+    public partial class MAINForm : MetroFramework.Forms.MetroForm
     {
-        public MainForm()
+        public MAINForm()
         {
             InitializeComponent();
         }
@@ -32,11 +32,11 @@ namespace IS1_20_PetrushinDA
             {
                 //Отображаем рабочую форму
                 this.Show();
-                //Вытаскиваем из класса поля в label'ы
+                //Вытаскиваем из класса поля в label'ыMi
                 metroLabel2.Text = Auth.auth_id;
-                metroLabel3.Text = Auth.auth_fio;
+                metroLabel3.Text = ($"Здравствуйте, { Auth.auth_fio}") ;
                 metroLabel4.ForeColor = Color.GreenYellow;
-                metroLabel4.Text = "Успешно!";
+                metroLabel4.Text = "Авторизация прошла успешно!";
                 //Красим текст в label в зелёный цвет
                 
             }
@@ -61,6 +61,21 @@ namespace IS1_20_PetrushinDA
         private void metroLabel4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MAINForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
